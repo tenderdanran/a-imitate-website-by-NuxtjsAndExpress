@@ -1,3 +1,12 @@
+/*
+ * @Author: TenderFlow
+ * @Date: 2023-01-28 08:46:07
+ * @LastEditTime: 2023-01-28 16:42:56
+ * @LastEditors: TenderFlow
+ * @FilePath: \imitate-website-front-end\nuxt.config.js
+ * @Description: 
+ * 
+ */
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -45,7 +54,13 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/'
+    baseURL: '/',
+    proxy: true
+  },
+  proxy: {
+    '/api': {
+      target: 'http://localhost:20202' //本地使用
+    }
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

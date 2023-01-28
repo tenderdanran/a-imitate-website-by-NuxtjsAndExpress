@@ -20,7 +20,6 @@ export default {
         // user: "imitate_user",
         user: "root",
         // 数据库用户密码
-        // password: "123321",
         password: "123321",
         // 此次使用数据库名
         database: "imitate_website"
