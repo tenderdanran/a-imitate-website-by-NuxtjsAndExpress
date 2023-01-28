@@ -1,14 +1,14 @@
 /*
  * @Author: TenderFlow
  * @Date: 2023-01-28 10:21:36
- * @LastEditTime: 2023-01-28 15:25:22
+ * @LastEditTime: 2023-01-28 20:28:22
  * @LastEditors: TenderFlow
- * @FilePath: \a-imitate-website-by-NuxtjsAndExpress\测试_ts后端\src\test\testSQL\testSQL.ts
+ * @FilePath: \a-imitate-website-by-NuxtjsAndExpress\测试_ts后端\test\testSQL\testSQL.ts
  * @Description: 
  * 
  */
 const express = require('express');
-const {RunSQL} = require('../../bin_util/sql_utils');
+const {RunSQL} = require('../../src/bin_util/sql_utils');
 
 
 console.log("testSQL已启动")

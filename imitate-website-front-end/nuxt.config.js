@@ -1,9 +1,9 @@
 /*
  * @Author: TenderFlow
  * @Date: 2023-01-28 08:46:07
- * @LastEditTime: 2023-01-28 16:42:56
+ * @LastEditTime: 2023-01-28 21:12:01
  * @LastEditors: TenderFlow
- * @FilePath: \imitate-website-front-end\nuxt.config.js
+ * @FilePath: \a-imitate-website-by-NuxtjsAndExpress\imitate-website-front-end\nuxt.config.js
  * @Description: 
  * 
  */
@@ -54,13 +54,16 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-    proxy: true
+    baseURL: 'http://localhost:3000',
+    proxy: true,
+    prefix: '/api'
   },
   proxy: {
     '/api': {
-      target: 'http://localhost:20202' //本地使用
-    }
+      target: 'http://localhost:20202',
+      pathRewrite: { '^/api': '/' }
+    },
+    changeOrigin: true,
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -75,6 +78,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^element-ui/]
+    transpile: [/^element-ui/],
+    vendor: ["axios"]
   }
 }

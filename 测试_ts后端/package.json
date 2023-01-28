@@ -4,7 +4,7 @@
     "mysql": "^2.18.1"
   },
   "scripts": {
-    "testSQL": "nodemon ./src/test/testSQL/testSQL.ts",
+    "testSQL": "nodemon ./test/testSQL/testSQL.ts",
     "start": "nodemon ./src/index.ts"
   },
   "devDependencies": {

@@ -1,9 +1,9 @@
 <!--
  * @Author: TenderFlow
  * @Date: 2023-01-28 17:29:51
- * @LastEditTime: 2023-01-28 17:59:14
+ * @LastEditTime: 2023-01-28 21:17:32
  * @LastEditors: TenderFlow
- * @FilePath: \imitate-website-front-end\pages\user\login.vue
+ * @FilePath: \a-imitate-website-by-NuxtjsAndExpress\imitate-website-front-end\pages\user\login.vue
  * @Description: 
  * 
 -->
@@ -17,16 +17,10 @@
 <script>
 export default {
   created() {
-    console.log("测试");
-    let result = this.$axios.$get("http://120.78.77.6:20202/");
-    console.log(result);
-    result
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    console.log("测试跨域连接");
+    this.$axios.$get("/").then((result) => {
+      console.log(result);
+    });
   },
 };
 </script>
