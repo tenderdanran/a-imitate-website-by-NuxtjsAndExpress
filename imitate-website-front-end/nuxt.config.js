@@ -1,7 +1,7 @@
 /*
  * @Author: TenderFlow
  * @Date: 2023-01-28 08:46:07
- * @LastEditTime: 2023-01-28 21:12:01
+ * @LastEditTime: 2023-01-29 08:57:27
  * @LastEditors: TenderFlow
  * @FilePath: \a-imitate-website-by-NuxtjsAndExpress\imitate-website-front-end\nuxt.config.js
  * @Description: 
@@ -60,7 +60,10 @@ export default {
   },
   proxy: {
     '/api': {
-      target: 'http://localhost:20202',
+      // 本地运行
+      // target: 'http://localhost:20202',
+      // 服务器运行
+      target: 'http://120.78.77.6:20202',
       pathRewrite: { '^/api': '/' }
     },
     changeOrigin: true,
