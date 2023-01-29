@@ -1,3 +1,12 @@
+<!--
+ * @Author: TenderFlow
+ * @Date: 2023-01-28 08:46:07
+ * @LastEditTime: 2023-01-29 09:34:17
+ * @LastEditors: TenderFlow
+ * @FilePath: \a-imitate-website-by-NuxtjsAndExpress\imitate-website-front-end\components\Tutorial.vue
+ * @Description: 
+ * 
+-->
 <!-- Please remove this file from your project -->
 <template>
   <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">

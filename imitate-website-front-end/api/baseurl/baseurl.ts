@@ -9,6 +9,5 @@
  */
 
 export default {
-    // 后台在线地址: http://120.78.77.6/
-    backend_url:"localhost:20202",
+    login:"user/login"
 }
